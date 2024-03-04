@@ -8,20 +8,16 @@
             <div class="card mb-4">
                 <div class="card-header p-0 col-lg">
                     <div class="nav-align-top">
-                        <ul class="nav nav-tabs" role="tablist">
+                        {{-- <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button type="button" class="nav-link waves-effect active" role="tab"
                                     data-bs-toggle="tab" data-bs-target="#navs-top-home" aria-controls="navs-top-home"
                                     aria-selected="true">O'zbekcha</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button type="button" class="nav-link waves-effect" role="tab" data-bs-toggle="tab"
-                                    data-bs-target="#navs-top-profile" aria-controls="navs-top-profile"
-                                    aria-selected="false" tabindex="-1">Русский</button>
-                            </li>
+
 
                             <span class="tab-slider" style="left: 0px; width: 91.1719px; bottom: 0px;"></span>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
                 <div class="card-body">
@@ -54,31 +50,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="navs-top-profile" role="tabpanel">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="form-floating form-floating-outline mb-4">
-                                            <textarea class="form-control h-px-75" id="basic-default-bio" name='ru.[title]' placeholder="Тема" rows="3">{{ old('ru' . '.title') ? old('ru' . '.title') : ($slide->translate('ru') != null ? $slide->translate('ru')->title : '') }}</textarea>
-                                            @error('ru_.title')
-                                                <p class="help-block text-danger">{{ $message }}</p>
-                                            @enderror
-                                            <label for="basic-default-bio">Тема</label>
-                                        </div>
-                                        <div class="form-floating form-floating-outline mb-4">
-                                            <textarea class="form-control h-px-75" id="basic-default-bio" name='ru.[description]' placeholder="Описание"
-                                                rows="3" required="">{{ old('ru' . '.description') ? old('ru' . '.description') : ($slide->translate('ru') != null ? $slide->translate('ru')->description : '') }}</textarea>
-                                            @error('ru_.description')
-                                                <p class="help-block text-danger">{{ $message }}</p>
-                                            @enderror
-                                            <label for="basic-default-bio">Описание</label>
-                                        </div>
-
-
-
-
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="row mt-3">
                                 <div class="col-12">
                                     <button type="submit"

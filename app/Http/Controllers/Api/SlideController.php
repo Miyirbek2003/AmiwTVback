@@ -32,4 +32,28 @@ class SlideController extends Controller
             ]);
         }
     }
+    public function show($id)
+    {
+        try {
+            $slide = Slide::where("id", $id)->first();
+            if ($slide != null) {
+                return response()->json([
+                    "status" => true,
+                    "item" => $slide
+                ]);
+            } else {
+                return response()->json([
+                    "status" => false,
+                    "message" => "Not found",
+                    "item" => []
+                ]);
+            }
+        } catch (\Throwable $th) {
+            return response()->json([
+                "status" => false,
+                "message" => "Error",
+                "errors" => $th->getMessage()
+            ]);
+        }
+    }
 }

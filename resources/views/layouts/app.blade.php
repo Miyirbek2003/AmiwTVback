@@ -11,7 +11,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-    <title>Umid Medical Centre Site | Dashboard </title>
+    <title>AmiwTv | Dashboard </title>
     <meta name="description"
         content="Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!">
     <meta name="keywords"
@@ -820,7 +820,7 @@
                                 </svg>
                             </span>
                         </span>
-                        <span class="app-brand-text demo menu-text fw-semibold ms-2">Umid Med Centre</span>
+                        <span class="app-brand-text demo menu-text fw-semibold ms-2">AmiwTv</span>
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -864,40 +864,7 @@
 
                         </ul>
                     </li>
-                    <li class="menu-item emp_main">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle waves-effect">
-                            <i class="menu-icon tf-icons mdi mdi-account-outline"></i>
-                            <div>Сотрудники</div>
-                        </a>
-
-
-                        <ul class="menu-sub ">
-
-
-
-                            <li class="menu-item emp1">
-                                <a href="{{ route('employees.index') }}" class="menu-link">
-                                    <div>Сотрудники</div>
-                                </a>
-
-
-                            </li>
-
-
-
-                            <li class="menu-item emp2">
-                                <a href="{{ route('employees.create') }}" class="menu-link">
-                                    <div>Добавить сотрудника</div>
-                                </a>
-
-
-                            </li>
-
-
-
-
-                        </ul>
-                    </li>
+                    
 
 
 
@@ -909,9 +876,9 @@
                     <li class="menu-item treatment_main">
                         <a href="javascript:void(0);" class="menu-link menu-toggle waves-effect">
                             <i class="menu-icon tf-icons mdi mdi-cube-outline"></i>
-                            <div>Лечений</div>
+                            <div>Новости</div>
                         </a>
-
+                                
 
                         <ul class="menu-sub">
 
@@ -919,7 +886,7 @@
 
                             <li class="menu-item treat1">
                                 <a href="{{ route('treatments.index') }}" class="menu-link">
-                                    <div>Категория лечений</div>
+                                    <div>Все новости</div>
                                 </a>
                             </li>
 
@@ -927,131 +894,23 @@
 
                             <li class="menu-item treat2">
                                 <a href="{{ route('treatments.create') }}" class="menu-link">
-                                    <div>Добавить категорию</div>
+                                    <div>Добавить новостью</div>
                                 </a>
                             </li>
 
 
 
 
-                            <li class="menu-item treat3">
-                                <a href="{{ route('typetreatments.index') }}" class="menu-link">
-                                    <div>Тип лечений</div>
-                                </a>
-                            </li>
-                            <li class="menu-item treat4">
-                                <a href="{{ route('typetreatments.create') }}" class="menu-link">
-                                    <div>Добавить тип лечений</div>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </li>
 
-                    <li class="menu-item feed_main">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle waves-effect">
-                            <i class="menu-icon tf-icons mdi mdi-comment-quote"></i>
-                            <div>Отзывы</div>
-                        </a>
+                    
 
-
-                        <ul class="menu-sub ">
+                    
 
 
 
-                            <li class="menu-item feed1">
-                                <a href="{{ route('feedback.index') }}" class="menu-link">
-                                    <div>Отзывы</div>
-                                </a>
-
-
-                            </li>
-
-
-
-                            <li class="menu-item feed2">
-                                <a href="{{ route('feedback.create') }}" class="menu-link">
-                                    <div>Добавить отзыв</div>
-                                </a>
-
-
-                            </li>
-
-
-
-
-                        </ul>
-                    </li>
-
-                    <li class="menu-item work_main">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle waves-effect">
-                            <i class="menu-icon tf-icons mdi mdi-briefcase-outline"></i>
-                            <div>Работы</div>
-                        </a>
-
-
-                        <ul class="menu-sub ">
-
-
-
-                            <li class="menu-item work1">
-                                <a href="{{ route('imageslide.index') }}" class="menu-link">
-                                    <div>Работы</div>
-                                </a>
-
-
-                            </li>
-
-
-
-                            <li class="menu-item work2">
-                                <a href="{{ route('imageslide.create') }}" class="menu-link">
-                                    <div>Добавить фото</div>
-                                </a>
-
-
-                            </li>
-
-
-
-
-                        </ul>
-                    </li>
-
-
-
-                    <li class="menu-item order_main">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle waves-effect">
-                            <i class="menu-icon tf-icons mdi mdi-format-align-bottom"></i>
-                            <div>Заявки</div>
-                        </a>
-
-
-                        <ul class="menu-sub ">
-
-
-                            <li class="menu-item order1">
-                                <a href="{{ route('order.index') }}" class="menu-link">
-                                    <div>Ожидание</div>
-                                </a>
-
-
-                            </li>
-
-
-
-                            <li class="menu-item order2">
-                                <a href="{{ route('zeroindex') }}" class="menu-link">
-                                    <div>Связано</div>
-                                </a>
-
-
-                            </li>
-
-
-
-
-                        </ul>
-                    </li>
                 </ul>
 
             </aside>
@@ -1220,6 +1079,9 @@
             $('.slide_main').addClass('open')
 
         };
+
+
+
         if (window.location.pathname == '/') {
             $('.home_main').addClass('active')
         };
@@ -1238,6 +1100,8 @@
             $('.treatment_main').addClass('open')
         };
 
+
+
         if (window.location.pathname == '/treatments/create') {
             $('.treat2').addClass('active')
             $('.treatment_main').addClass('open')
@@ -1251,14 +1115,16 @@
             $('.treatment_main').addClass('open')
         };
 
-        if (window.location.pathname == '/feedback') {
-            $('.feed1').addClass('active')
-            $('.feed_main').addClass('open')
+
+
+        if (window.location.pathname == '/tv') {
+            $('.tv1').addClass('active')
+            $('.tv').addClass('open')
         };
 
-        if (window.location.pathname == '/feedback/create') {
-            $('.feed2').addClass('active')
-            $('.feed_main').addClass('open')
+        if (window.location.pathname == '/tv/create') {
+            $('.tv2').addClass('active')
+            $('.tv').addClass('open')
         };
 
 

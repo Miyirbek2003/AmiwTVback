@@ -60,6 +60,7 @@ class TreatmentsController extends Controller
         foreach ($languages as $key => $value) {
             if ($data[$key . '_']['title']) {
                 $slide->translateOrNew($key)->title = $data[$key . '_']['title'];
+                $slide->translateOrNew($key)->body = $data[$key . '_']['body'];
             }
         }
         $slide->save();

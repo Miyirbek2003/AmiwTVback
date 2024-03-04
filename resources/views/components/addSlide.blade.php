@@ -17,20 +17,15 @@
             <div class="card mb-4">
                 <div class="card-header p-0 col-lg">
                     <div class="nav-align-top">
-                        <ul class="nav nav-tabs" role="tablist">
+                        {{-- <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button type="button" class="nav-link waves-effect active" role="tab"
                                     data-bs-toggle="tab" data-bs-target="#navs-top-home" aria-controls="navs-top-home"
                                     aria-selected="true">O'zbekcha</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button type="button" class="nav-link waves-effect" role="tab" data-bs-toggle="tab"
-                                    data-bs-target="#navs-top-profile" aria-controls="navs-top-profile"
-                                    aria-selected="false" tabindex="-1">Русский</button>
-                            </li>
-
+                            
                             <span class="tab-slider" style="left: 0px; width: 91.1719px; bottom: 0px;"></span>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
                 <div class="card-body">

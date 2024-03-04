@@ -19,6 +19,7 @@ class CreateTreatmentsTranslationsTable extends Migration
             $table->foreign('treatments_id')->references('id')->on('treatments')->onDelete('cascade');
             $table->string('locale')->index();
             $table->string('title')->nullable();
+            $table->longText('body')->nullable();
             $table->timestamps();
         });
     }

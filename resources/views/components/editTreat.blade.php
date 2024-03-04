@@ -14,7 +14,7 @@
                 <div class="col-xl-12">
                     <div class="card mb-4">
                         <div class="card-header p-0 col-lg">
-                            <div class="nav-align-top">
+                            {{-- <div class="nav-align-top">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <button type="button" class="nav-link waves-effect active" role="tab"
@@ -30,7 +30,7 @@
 
                                     <span class="tab-slider" style="left: 0px; width: 91.1719px; bottom: 0px;"></span>
                                 </ul>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="card-body">
 
@@ -53,32 +53,23 @@
                                                         Looks good!
                                                     </div>
                                                 </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="navs-top-profile" role="tabpanel">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="form-floating form-floating-outline mb-4">
-                                                    <input type="text" class="form-control h-px-25"
-                                                        id="basic-default-bio" name='ru.[title]'
-                                                        placeholder="Mavzuni kiriting" rows="3" required
-                                                        value="{{ old('ru' . '.title') ? old('ru' . '.title') : ($slide->translate('ru') != null ? $slide->translate('ru')->title : '') }}">
-                                                    <label for="basic-default-bio">Тема</label>
+                                                <div>
+                                                    <textarea class="form-control ckeditor" id="post_content" cols='30' name={{ 'uz.[body]' }} placeholder="Kontent"
+                                                        rows="10">
+                                                        {{ old('uz' . '.body') ? old('uz' . '.body') : ($slide->translate('uz') != null ? $slide->translate('uz')->body : '') }}
+        
+                                                    </textarea>
+                                                    <label for="basic-default-bio">Kontent</label>
                                                 </div>
 
-
-
-
-
                                             </div>
                                         </div>
                                     </div>
+                                   
                                     <div class="row mt-3">
                                         <div class="col-12">
                                             <button type="submit"
-                                                class="btn btn-primary waves-effect waves-light">Добавить</button>
+                                                class="btn btn-primary waves-effect waves-light">Изменить</button>
                                         </div>
                                     </div>
                                 </div>

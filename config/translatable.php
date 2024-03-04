@@ -11,13 +11,11 @@ return [
     |
     */
     'locales' => [
-        'ru',
         'uz',
     ],
 
 
     'languages' => [
-        'ru' => 'Русский',
         'uz' => 'O`zbekcha',
     ],
     /*
