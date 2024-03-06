@@ -105,7 +105,6 @@ class TreatmentsController extends Controller
     {
 
         $data = $request->validate([
-            'ru_.*' => 'required',
             'uz_.*' => 'required',
             'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
         ]);
@@ -123,6 +122,7 @@ class TreatmentsController extends Controller
         foreach ($languages as $key => $value) {
             if ($data[$key . '_']['title']) {
                 $slide->translateOrNew($key)->title = $data[$key . '_']['title'];
+                $slide->translateOrNew($key)->body = $data[$key . '_']['body'];
             }
         }
         $slide->save();
