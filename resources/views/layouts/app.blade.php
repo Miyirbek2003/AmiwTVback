@@ -906,6 +906,21 @@
                     </li>
 
                     
+                    <li class="menu-item treatment_main">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle waves-effect">
+                            <i class="menu-icon tf-icons mdi mdi-cube-outline"></i>
+                            <div>О нас</div>
+                        </a>
+                                
+
+                        <ul class="menu-sub">
+                            <li class="menu-item treat1">
+                                <a href="{{ route('about') }}" class="menu-link">
+                                    <div>Все новости</div>
+                                </a>
+                            </li>  
+                        </ul>
+                    </li>
 
                     
 
@@ -1072,12 +1087,10 @@
         if (window.location.pathname == '/slides') {
             $('.slide1').addClass('active')
             $('.slide_main').addClass('open')
-
         };
         if (window.location.pathname == '/slides/create') {
             $('.slide2').addClass('active')
             $('.slide_main').addClass('open')
-
         };
 
 

@@ -107,7 +107,6 @@ class SlideController extends Controller
      */
     public function update(Request $request, Slide $slide)
     {
-
         $data = $request->validate([
             'uz_.*' => 'required',
             'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',

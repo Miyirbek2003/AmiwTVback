@@ -25,6 +25,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::resource('/typetreatments', App\Http\Controllers\TypeTreatmentsController::class);
     Route::resource('/feedback', App\Http\Controllers\FeedbackController::class);
     Route::resource('/imageslide', App\Http\Controllers\ImageSlideController::class);
+    Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
+    Route::post('/about', [App\Http\Controllers\AboutController::class, 'update']);
     Route::resource('/order', App\Http\Controllers\OrderController::class);
     Route::get('/zeroorder', [App\Http\Controllers\OrderController::class, 'zeroindex'])->name('zeroindex');
 });
