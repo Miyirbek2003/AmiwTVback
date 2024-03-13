@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\About;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,7 +21,9 @@ Route::post('/order', [App\Http\Controllers\OrderController::class, 'store']);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/about', [App\Http\Controllers\Api\SlideController::class, 'index']);
+Route::get('/about', function (){
+    return About::all();
+});
 Route::get('/slides', [App\Http\Controllers\Api\SlideController::class, 'index']);
 Route::get('/slides/{id}', [App\Http\Controllers\Api\SlideController::class, 'show']);
 Route::get('/employee', [App\Http\Controllers\Api\EmployeeController::class, 'index']);
